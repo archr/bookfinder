@@ -1,0 +1,17 @@
+{
+  "name": "bookfinder",
+  "version": "0.0.1",
+  "description": "Buscador de libros",
+  "main": "express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antonio Sandoval",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "~0.6.2",
+    "express": "~4.8.5",
+    "body-parser": "~1.6.5",
+    "mongoose": "~3.8.15"
+  }
+}
