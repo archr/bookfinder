@@ -12,6 +12,7 @@
     "colors": "~0.6.2",
     "express": "~4.8.5",
     "body-parser": "~1.6.5",
-    "mongoose": "~3.8.15"
+    "mongoose": "~3.8.15",
+    "jade": "~1.6.0"
   }
 }
