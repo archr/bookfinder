@@ -6,3 +6,23 @@ html
     h4 Existen #{books.length} Libros
 
     a(href="/app/add") Agregar libro
+
+    table
+      tr
+        td Nombre
+        td Autor
+        td Eliminar
+        td Modificar
+
+      if books.length == 0
+        tr
+          td(colspan="3") No hay libros disponibles
+      else
+        each book in books
+          tr
+            td= book.name
+            td= book.authorName
+            td
+              a(href="/app/delete/#{book.id}") Eliminar
+            td
+              a(href="/app/edit/#{book.id}") Modificar

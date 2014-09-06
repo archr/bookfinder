@@ -1,0 +1,9 @@
+include ./_layout
+
+block content
+  h1 Editar Libro
+
+  form(method="POST" action="")
+    input(name="name" placeholder="Nombre del libro" value=book.name)
+    input(name="authorName" placeholder="Nombre del autor" value=book.authorName)
+    input(type="submit" value="Editar")
