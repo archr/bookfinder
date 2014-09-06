@@ -31,8 +31,9 @@ fs.readdirSync("./models").forEach(function (model){
 //
 // Se configura la aplicación
 //
-
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
 app.use(express.static('./public'));
 app.set('views', "./views");
 app.set('view engine', 'jade');

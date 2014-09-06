@@ -36,4 +36,8 @@ app.route("/")
 app.route('/add')
 .get(function (req, res){
   res.render('add-book');
+})
+.post(function (req, res){
+  console.log(req.body);
+  res.redirect("back");
 });
